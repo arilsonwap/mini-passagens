@@ -14,7 +14,7 @@ function filtrarAzul(lista: any[]) {
   );
 }
 
-async function buscarAzul(origem: string, destino: string, data: string) {
+export async function buscarPassagens(origem: string, destino: string, data: string) {
   try {
     const response = await axios.get(BASE_URL, {
       headers: {
@@ -48,8 +48,8 @@ async function buscarAzul(origem: string, destino: string, data: string) {
 
 // 🔵 Buscar IDA + VOLTA + TOTAL
 export async function buscarAzulIdaVolta() {
-  const ida = await buscarAzul("SJL", "BEL", "2025-12-27");
-  const volta = await buscarAzul("BEL", "SJL", "2026-01-10");
+  const ida = await buscarPassagens("SJL", "BEL", "2025-12-27");
+  const volta = await buscarPassagens("BEL", "SJL", "2026-01-10");
 
   return {
     ida,
