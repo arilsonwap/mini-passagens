@@ -34,8 +34,7 @@ export default function IdaVoltaScreen() {
           <Text style={styles.section}>IDA – 27/12/2025 (SJL → BEL)</Text>
           <Text style={styles.price}>R$ {ida[0].price}</Text>
           <Text style={styles.sub}>Saída: {String(ida[0].departureTime)}</Text>
-<Text style={styles.sub}>Chegada: {String(ida[0].arrivalTime)}</Text>
-
+          <Text style={styles.sub}>Chegada: {String(ida[0].arrivalTime)}</Text>
         </View>
       )}
 
@@ -45,8 +44,7 @@ export default function IdaVoltaScreen() {
           <Text style={styles.section}>VOLTA – 10/01/2026 (BEL → SJL)</Text>
           <Text style={styles.price}>R$ {volta[0].price}</Text>
           <Text style={styles.sub}>Saída: {String(volta[0].departureTime)}</Text>
-<Text style={styles.sub}>Chegada: {String(volta[0].arrivalTime)}</Text>
-
+          <Text style={styles.sub}>Chegada: {String(volta[0].arrivalTime)}</Text>
         </View>
       )}
 
