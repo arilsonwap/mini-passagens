@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList } from "react-native";
 import { COLORS } from "../theme";
 import FlightCard from "../components/FlightCard";
-import { buscarPassagensMock } from "../services/flights";
+import { buscarPassagens } from "../services/flights";
 
 export default function HomeScreen() {
   const [origem,setOrigem]=useState("MAO");
@@ -11,7 +11,7 @@ export default function HomeScreen() {
   const [voos,setVoos]=useState([]);
 
   async function buscar(){
-    const lista=await buscarPassagensMock(origem,destino,data);
+    const lista=await buscarPassagens(origem,destino,data);
     setVoos(lista);
   }
 
