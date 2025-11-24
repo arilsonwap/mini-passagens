@@ -9,7 +9,7 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <StatusBar style="light" />
-        <IdaVoltaScreen />   {/* <-- TELA NOVA */}
+        <IdaVoltaScreen />
       </SafeAreaView>
     </SafeAreaProvider>
   );
